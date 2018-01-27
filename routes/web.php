@@ -13,4 +13,5 @@
 Route::get('/', function () {
 	return view('welcome');
 })->middleware('test');
+Route::get('/send', 'sendController@send');
 Route::resource('/employee', 'EmployeeController');
