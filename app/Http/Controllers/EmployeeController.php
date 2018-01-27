@@ -119,8 +119,9 @@ class EmployeeController extends Controller
 
     public function pdf()
     {
+        $serial = 1;
         $data = Employee::all();
-        $pdf = PDF::loadView('employee.employeeList', compact('data'));
+        $pdf = PDF::loadView('employee.employeeList', compact('data', 'serial'));
         return $pdf->download('employeeList.pdf');
     }
 }
