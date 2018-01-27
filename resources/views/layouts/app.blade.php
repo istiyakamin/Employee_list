@@ -117,7 +117,6 @@
 		margin-right: 10px;
 	}
     .pagination {
-        float: right;
         margin: 0 0 5px;
     }
     .pagination li a {
@@ -315,12 +314,12 @@ $(document).ready(function(){
 						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 					</div>
 					<div class="modal-body">					
-						<p>Are you sure you want to delete these Records?</p>
-						<p class="text-warning"><small>This action cannot be undone.</small></p>
+						<p>You don't have any Permission to delete multiple data</p>
+						<p class="text-warning"><small>Only Admin Can delete multiple Data.</small></p>
 					</div>
 					<div class="modal-footer">
 						<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
-						<input type="submit" class="btn btn-danger" value="Delete">
+						<input type="submit" class="btn disabled" value="Delete">
 					</div>
 				</form>
 			</div>

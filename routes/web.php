@@ -15,3 +15,5 @@ Route::get('/', function () {
 })->middleware('test');
 Route::get('/send', 'sendController@send');
 Route::resource('/employee', 'EmployeeController');
+
+Route::get('/pdf', 'EmployeeController@pdf');

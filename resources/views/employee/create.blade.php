@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'Employee List')
+@section('title', 'Add Employee')
 @section('create')
 
 <form action="/employee/@yield('editId')" method="post">
@@ -7,7 +7,7 @@
 	@section('editMethod')
 	@show
 	<div class="modal-header">
-		<h4 class="modal-title">Add Employee</h4>
+		<h4 class="modal-title">@yield('title')</h4>
 		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 	</div>
 	<div class="modal-body">

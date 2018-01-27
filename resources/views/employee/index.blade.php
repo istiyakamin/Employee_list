@@ -9,6 +9,9 @@
             </div>
             <div class="col-sm-6">
                 <a href="/employee/create" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Add New Employee</span></a>
+
+                <a href="/pdf" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>PDF Download</span></a>
+
                 <a href="#deleteEmployeeModal" class="btn btn-danger" data-toggle="modal"><i class="material-icons">&#xE15C;</i> <span>Delete</span></a>
             </div>
         </div>
@@ -58,16 +61,10 @@
         </tbody>
     </table>
     <div class="clearfix">
-        <div class="hint-text">Showing <b>5</b> out of <b>25</b> entries</div>
-        <ul class="pagination">
+        <ul class="pagination centered">
             {{$employees->links()}}
             {{-- <li class="page-item disabled"><a href="#">Previous</a></li>
-            <li class="page-item"><a href="#" class="page-link">1</a></li>
-            <li class="page-item"><a href="#" class="page-link">2</a></li>
-            <li class="page-item active"><a href="#" class="page-link">3</a></li>
-            <li class="page-item"><a href="#" class="page-link">4</a></li>
-            <li class="page-item"><a href="#" class="page-link">5</a></li>
-            <li class="page-item"><a href="#" class="page-link">Next</a></li> --}}
+            > --}}
         </ul>
     </div>
 </div>

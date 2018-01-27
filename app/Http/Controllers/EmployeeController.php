@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Employee;
 use Illuminate\Http\Request;
+use PDF;
 
 class EmployeeController extends Controller
 {
@@ -114,5 +115,12 @@ class EmployeeController extends Controller
         $delete->delete();
         session()->flash('message', 'Successfully Deleted');
         return redirect('/employee');
+    }
+
+    public function pdf()
+    {
+        $data = Employee::all();
+        $pdf = PDF::loadView('employee.employeeList', compact('data'));
+        return $pdf->download('employeeList.pdf');
     }
 }
