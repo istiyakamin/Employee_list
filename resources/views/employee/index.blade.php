@@ -5,7 +5,7 @@
     <div class="table-title">
         <div class="row">
             <div class="col-sm-6">
-                <h2>Manage <b>Employees</b></h2>
+                <h2><a href="/" style="text-decoration: none; color: white; ">Manage <b>Employees</b></a></h2>
             </div>
             <div class="col-sm-6">
                 <a href="/employee/create" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Add New Employee</span></a>
@@ -70,4 +70,4 @@
 </div>
 @include('employee.partials.messages');
 </div>
-@endsection
+@endsection 
